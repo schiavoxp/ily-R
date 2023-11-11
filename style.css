@@ -3,7 +3,7 @@
     padding: 0;
 }
 :root{
-    --heart-wh: 250px;
+    --heart-wh: 175px;
     --heart-color: rgb(255, 0, 0);
 }
 header {
@@ -47,8 +47,8 @@ main{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 13rem;
+    grid-template-rows: 0.8fr 1.4fr 0.8fr;
+    font-size: 9rem;
     font-family: sans-serif;
 }
 .txt {
