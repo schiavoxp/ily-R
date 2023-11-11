@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --heart-wh: 250px;
+    --heart-color: rgb(255, 0, 0);
+}
+header {
+    font-size: 67.5%;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(61, 61, 61);
+    display: grid;
+    position: relative;
+}
+.heart {
+    width: var(--heart-wh);
+    height: var(--heart-wh);
+    background: var(--heart-color);
+    transform: rotate(-45deg);
+    place-self: center;
+    display: grid;
+    position: absolute;
+}
+.heart::before, .heart::after {
+    content: "";
+    width: var(--heart-wh);
+    height: var(--heart-wh);
+    background: var(--heart-color);
+    border-radius: 50%;
+    position: absolute;
+}
+.heart::before {
+    top: calc(-1*(var(--heart-wh)/2));
+    left: 0;   
+}
+
+.heart::after {
+    left: calc(var(--heart-wh)/2);
+    top: 0;
+}
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 13rem;
+    font-family: sans-serif;
+}
+.txt {
+    color: white;
+    place-self: center;
+    padding-bottom: 55px;
+}
+.hidden{
+    display: none;
+}
